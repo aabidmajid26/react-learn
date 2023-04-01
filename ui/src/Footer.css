@@ -1,0 +1,8 @@
+#footer {
+    height: 10%;
+    width: 100%;
+    background-color: coral;
+    padding: 1%;
+    position: absolute;
+    bottom: 0;
+}
