@@ -1,12 +1,25 @@
 .main-content {
     margin: 3%;
+    font-family: cursive;
 }
 
 #react-fun-heading {
-    color: #232323;
+    color: hsl(184, 80%, 57%);
 }
 
 #react-fun-list {
-    color: dimgray;
-    font-weight: 400;
+    color: #a1a1a1;
+    font-weight: bold;
+    list-style: none;
+    color: #f1f1f1;
 }
+
+#react-fun-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hsl(184, 80%, 57%);; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    padding: 1%;
+  }

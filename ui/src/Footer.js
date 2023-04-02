@@ -1,8 +1,10 @@
+import './Footer.css';
+
+
 function Footer() {
     return (
         <div id="footer">
-            <div>All rights reserved</div>
-            <a>Hello World</a>
+            <div>No rights reserved</div>
         </div>
     )
 }

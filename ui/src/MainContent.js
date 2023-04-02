@@ -1,14 +1,16 @@
+import './MainContent.css';
+
 
 function MainContent() {
     return (
         <div className="main-content">
-            <h1 id="react-fun-heading">Why React is Fun?</h1>
-            <ol id="react-fun-list">
-                <li>It's composable</li>
-                <li>It's declarative</li>
-                <li>It's the most popul                                                                                                                                                                                                                                             ar one making rounds</li>
+            <h1 id="react-fun-heading">Fun Facts About React:</h1>
+            <ul id="react-fun-list">
+                <li>Was released in 2013</li>
+                <li>Was originally created by Jordan Weeles</li>
+                <li>Has well over 100K stars on Github</li>
                 <li>It's maintained by folks at Meta!</li>
-            </ol>
+            </ul>
         </div>
     )
 }

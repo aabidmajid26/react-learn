@@ -1,8 +1,10 @@
 #footer {
     height: 10%;
     width: 100%;
-    background-color: coral;
     padding: 1%;
     position: absolute;
     bottom: 0;
+    background-color: #232323;
+    color: #f1f1f1;
+    text-align: center;
 }

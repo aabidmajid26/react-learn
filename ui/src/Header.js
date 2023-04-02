@@ -5,12 +5,8 @@ function Header() {
         <div id='wrapper'>
             <img src={logo} id='logo'></img>
             <div id='header-wrapper'>
-                <div id='brand'>Third Wave</div>
-                <ul id='ul-list'>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+                <div id='brand'>ReactFacts</div>
+                <div id='brand'>Aabid Majid - Project</div>
             </div>
         </div>
 
