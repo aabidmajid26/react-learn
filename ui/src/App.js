@@ -7,7 +7,7 @@ export default function App() {
     return (
         <div className="container">
             <Header />
-            {/* <Hero /> */}
+            <Hero />
             <Card />
         </div>
     )

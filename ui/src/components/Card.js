@@ -4,11 +4,11 @@ export default function Card() {
     return (
         <div className='card'>
             <div className='photo'>
-                <img id="sold-out" src={star}/>
-                <img src={person} />
+                <img id="sold-out" alt='' src={star}/>
+                <img alt='' src={person} />
             </div>
             <div className='rating'>
-                <img id='rating-img' src={star} />
+                <img id='rating-img' alt='' src={star} />
                 <span id='rating-details'>5.5[6] USA</span>
             </div>
             <p className='desc'>
