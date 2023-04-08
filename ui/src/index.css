@@ -1,0 +1,51 @@
+body {
+    background-color: #353535;
+    color: #f3f3f3;
+    margin: 0;
+}
+
+#header {
+    background-color: #232323;
+    margin: 0;
+    padding: 5%;
+    box-shadow: 1px 5px rgba(255, 255, 255, 0.1);
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dadjoke {
+    background-color: #232323;
+    padding: 5%;
+    margin-top: 3%;
+}
+
+#q {
+    background-color: white;
+    color: black;
+    padding: 5%;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 3rem;
+    -webkit-transition: background-color 0.1s ease-out;
+    -moz-transition: background-color 0.1s ease-out;
+    -o-transition: background-color 0.1s ease-out;
+    transition: background-color 0.1s ease-out;
+}
+#q:active {
+    background-color: green;
+    cursor: pointer;
+  }
+#clickme {
+    height: 1em;
+    rotate: -90deg;
+}
+#p {
+    background-color: blanchedalmond;
+    color: black;
+    padding: 5%;
+    border-radius: 3rem;
+    width: fit-content;
+    display: none;
+}
+  
