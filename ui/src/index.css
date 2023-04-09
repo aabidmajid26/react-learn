@@ -1,0 +1,33 @@
+html, body, .container, #root {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    text-align: center;
+}
+.board-row {
+    height: 5%;
+}
+#square {
+    width: 5%;
+    min-height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+    line-height: 100%;
+}
+#square:active{
+    background-color: #232323;
+    color: #f3f3f3;
+}
+#reset {
+    width: 10%;
+    height: 3%;
+    cursor: pointer;
+    margin-top: 1%;
+    border-radius: 10px;
+    background-color: rgba(211, 21, 21, 0.784);
+    color: whitesmoke;
+}
