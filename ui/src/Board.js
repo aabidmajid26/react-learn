@@ -7,15 +7,15 @@ function Square({value, onSquareClick}) {
 }
 
 
-export default function Board() { 
-    const [isX, setIsX] = useState(true);
+export default function Board(props) { 
     const [squares, setSquares] = useState(Array(9).fill('\u2060'));
     const [winner, setWinner] = useState(null);
 
     function reset() {
-        setIsX(true);
+        props.setIsX(true);
         setSquares(Array(9).fill('\u2060'))
         setWinner(null);
+        props.saveHistory([Array(9).fill('\u2060')])
     }
 
     function calculateWinner(squares) {
@@ -41,16 +41,20 @@ export default function Board() {
         if (winner==='X' | winner==='O'){return;}
         const nextSquares = squares.slice();
         if (!(nextSquares[i] === 'X' | nextSquares[i] === 'O')){
-            nextSquares[i] = isX ? 'X':'O'
+            nextSquares[i] = props.isX? 'X':'O'
             setSquares(nextSquares);
-            setIsX(prevState => !prevState);
+            props.setIsX(prevState => !prevState);
+            const hist = props.history.slice();
+            hist.push(nextSquares)
+            props.saveHistory(hist);
+            console.log(props.history, 'history');
             calculateWinner(nextSquares);
         }
     }
     return (
         <div className="container">
             <div>{winner? `Winner is: ${winner}`: ''}</div>
-            <div>{!winner? `Next player is: ${isX? 'X': 'O'}`: ''}</div>
+            <div>{!winner? `Next player is: ${props.isX? 'X': 'O'}`: ''}</div>
             <div className="board-row">
                 <Square 
                     value={squares[0]} 

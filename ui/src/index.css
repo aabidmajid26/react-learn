@@ -5,6 +5,12 @@ html, body, .container, #root {
 .container {
     text-align: center;
 }
+.game {
+    /* text-align: center; */
+}
+.game-info {
+    margin-top: 5%;
+}
 .board-row {
     height: 5%;
 }
@@ -31,3 +37,4 @@ html, body, .container, #root {
     background-color: rgba(211, 21, 21, 0.784);
     color: whitesmoke;
 }
+

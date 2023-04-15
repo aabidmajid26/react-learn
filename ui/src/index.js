@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom/client';
 
-import Board from './Board';
+import Game from './Game';
 
 
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(<Board />);
+root.render(<Game />);
