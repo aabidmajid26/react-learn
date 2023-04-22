@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+    justify-content: center;
+}
+.table-container {
+    margin: auto;
+}
+table {
+    margin: auto;
+}
+table td {
+    text-align: center;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
